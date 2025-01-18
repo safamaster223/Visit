@@ -1,0 +1,292 @@
+/* Reset default margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body dan tema gelap */
+  body {
+    background-color: #121212; /* Dark background */
+    color: #eee;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  /* Navigasi */
+  .navigasi {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: slideIn 0.5s ease-out;
+  }
+  
+  .navigasi ul {
+    list-style: none;
+    display: flex;
+    color: #fff;
+  }
+  
+  .navigasi li {
+    margin: 0 15px;
+  }
+  
+  .navigasi a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .navigasi a:hover {
+    color: #ff4081;
+  }
+  
+  /* Animasi navbar saat loading */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Main */
+  .main-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; /* adjust to avoid overlap with navbar */
+    padding: 40px;
+  }
+  
+  .gambar {
+    width: 450px;
+    height: 450px;
+    margin: 20px 0px 20px 80px;
+    background: #323535; /* Pastikan background abu-abu */
+    border-radius: 12px; /* Border yang lebih lembut */
+    object-fit: cover; /* Agar gambar proporsional */
+    position: relative; /* Agar bisa meletakkan elemen di dalam gambar */
+    overflow: hidden;
+    transition: transform 1s ease;
+    animation: fadeIn 1.5s forwards;
+}
+
+
+  
+  .gambar:hover {
+    transform: scale(1.05);
+  }
+  
+  .sub {
+    margin-top: 120px;
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    transition: transform 0.3s ease;
+  }
+  
+  .sub:hover {
+    transform: scale(1.05);
+  }
+
+
+  .sub h1 {
+    color: #ff4081;
+  }
+  
+  .sub p {
+    color: #ddd;
+  }
+  
+  .sub button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub button:hover {
+    background-color: #f50057;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .sub2 {
+    background-color: #2c2c2c;
+    margin-top: 120px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    transition: transform 0.3s ease;
+  }
+
+  .sub2:hover {
+    transform: scale(1.05);
+  }
+
+  .sub2 button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sub2 button:hover {
+    background-color: #f50057;
+  }
+  
+  .gambar2 {
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .gambar2:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Project Section */
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .project1,
+  .project2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #333;
+    width: 30%;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card h1 {
+    color: #ff4081;
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #f50057;
+  }
+  
+  /* Banner */
+  .banner {
+    background-color: #212121;
+    text-align: center;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 12px;
+  }
+  
+  .banner h1 {
+    color: #ff4081;
+  }
+  
+  .banner button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+  }
+  
+  .banner button:hover {
+    background-color: #f50057;
+  }
+  
+  /* Scroll Effect */
+  @keyframes scrollEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section-scroll {
+    opacity: 0;
+    animation: scrollEffect 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .section-scroll img,
+  .section-scroll button {
+    animation: scrollEffect 1s forwards;
+    animation-delay: 1s;
+  }
+  

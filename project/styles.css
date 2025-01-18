@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navigasi {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  .navigasi button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .navigasi a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+  }
+  /* Body dan tema gelap */
+  body {
+    background-color: #121212; /* Dark background */
+    color: #eee;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  .project1,
+  .project2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-image: url('por.png'); /* Ganti dengan path gambar kamu */
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    height: 300px;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; /* Menempatkan teks di bawah */
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card .info {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .info {
+    opacity: 1;
+  }
+  
+  .card h1 {
+    color: #ff4081;
+    margin-bottom: 10px;
+  }
+  
+  .card button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #f50057;
+  }
+  
+  
+  .banner {
+    background-color: #212121;
+    text-align: center;
+    padding: 50px;
+    margin-top: 40px;
+    border-radius: 12px;
+    justify-content: center;
+  }
+  
+  .banner h1 {
+    color: #ff4081;
+  }
+  
+  .banner button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+  }
+  
+  .banner button:hover {
+    background-color: #f50057;
+  }
+  
+  /* Scroll Effect */
+  @keyframes scrollEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .section-scroll {
+    opacity: 0;
+    animation: scrollEffect 1s forwards;
+    animation-delay: 0.5s;
+  }
+  
+  .section-scroll img,
+  .section-scroll button {
+    animation: scrollEffect 1s forwards;
+    animation-delay: 1s;
+  }
+  

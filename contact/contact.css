@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body dan tema gelap */
+  body {
+    background-color: #121212; /* Dark background */
+    color: #eee;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .navigasi {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #1e1e1e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  .logo {
+    margin-top: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  .navigasi button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  .navigasi a {
+    text-decoration: none;
+    font-style: normal;
+    color: white;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+  }
+
+  .container .card {
+    background-color:#333 ;
+    border-radius: 12px;
+    width: 20%;
+    height: 200px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 15px 40px 15px 40px;
+    transition: transform 0.7s ease;
+    
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    background-color:slateblue;
+    
+  }
+
+
+  button {
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 12px;
+    transition: background-color 0.3s ease;
+    width: 70px;
+    height: 40px;
+    border: none;
+    background-color:gainsboro;
+  }
+
+  button:hover {
+    background-color: aqua;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color:black;
+  }
+
+
+  /* Pastikan selector di sini benar */
+.fa-brands.fa-instagram {
+    width: 40px;      /* Atur lebar */
+    height: 40px;     /* Atur tinggi */
+    margin-bottom: 12px; /* Jarak bawah */
+    font-size: 40px;  
+    transition: transform 0.7 ease;
+}
+
+
+
+.fa-brands.fa-instagram:hover {
+  color:sienna;
+}
+
+.fa-brands.fa-github {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  font-size: 40px;
+  transition:transform 0.7 ease;
+}
+
+.fa-brands.fa-github:hover {
+  color:black;
+}
+
+.fa-brands.fa-whatsapp {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  font-size: 40px;
+  transition:transform 0.7 ease;
+}
+
+.fa-brands.fa-whatsapp:hover {
+  color:green;
+}
+
+.fa-brands.fa-linkedin {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 12px;
+  font-size: 40px;
+  transition:transform 0.7s ease; 
+}
+
+.fa-brands.fa-linkedin:hover {
+  background-color:blue;
+}
